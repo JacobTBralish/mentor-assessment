@@ -69,7 +69,8 @@
 
 .backLink {
     text-decoration: none;
-    color:black
+    color:black;
+    font-weight: bold
 }
 
 .detailedPostButton {
@@ -108,7 +109,9 @@
     width: 120px; 
     border-radius: 0;
     border: rgba(0, 0, 0, 0.055) 1px solid;
-    background: rgb(173, 170, 170)}
+    background: rgb(173, 170, 170);
+    transition: .4s;
+}
 
 .detailedCompletedButtonDone {
     font-size: 20px;
@@ -118,5 +121,6 @@
     width: 120px; 
     border-radius: 0;
     border: rgba(0, 0, 0, 0.055) 1px solid;
-    background: rgb(173, 170, 170)
+    background: rgb(173, 170, 170);
+    transition: .4s;
 }

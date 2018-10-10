@@ -13,22 +13,27 @@ class List extends Component {
     }
 
     deleteATask = (id) => {
-        this.props.deleteTask(id)
-        this.props.history.push('/')
+        this.props.deleteTask(id);
+        this.props.history.push('/');
+    }
+
+    markAsCompleted=(id)=>{
+        this.props.markCompleted(id);
+        this.props.history.push('/');
     }
     
     render() { 
         let { tasks } = this.props;
 
         let mappedTasks = tasks ? tasks.map((task, index) => {
-            console.log(tasks)
+            
             return <div key={index} className='task'>
-                <Link className='taskTitle' to={`/detailedView/${task.id}`}><h4 >{task.title}</h4></Link>
+                <Link className='taskTitle' to={`/detailedView/${task.id}`}><h4>{task.title}</h4></Link>
                 <div className='taskButtons'>
                 {task.completed ?
                     <button className='completedButtonDone'>Completed</button>
                     :
-                    <button className='completedButton' onClick={() => {markCompleted(task.id)}}>Completed</button>
+                    <button className='completedButton' onClick={() => {this.markAsCompleted(task.id)}}>Completed</button>
                 }
                     <button className='deleteButton' onClick={() => {this.deleteATask(task.id)}}>X</button>
                 </div>

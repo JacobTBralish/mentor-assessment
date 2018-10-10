@@ -35,7 +35,7 @@ class TodoInput extends Component {
         return ( 
             <div className='inputBox'>
                 <label className='titleLabel'>To-Do:</label>
-                <input className='titleInput' value={title} onChange={this.handleChange} type='text'></input>
+                <input className='titleInput' value={title} maxLength={60} onChange={this.handleChange} type='text'></input>
                 <button className='addButton' onClick={() => {this.postNewTask(title)}}>Add to list</button>
             </div>
          );

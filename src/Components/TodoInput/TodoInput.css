@@ -2,7 +2,7 @@
     margin: 10px;
     display: flex;
     padding: 50px;
-    width: 60vw;
+    width: 50vw;
     height: 200px;
     border: 1px black solid;
     box-shadow: 1px 1px 1px black;
@@ -27,7 +27,7 @@
 
 .titleLabel {
     font-size: 30px;
-
+    font-weight: bold
 }
 
 .addButton {
@@ -35,6 +35,7 @@
     width: 100px;
     background: rgb(27, 125, 253);
     font-size: 15px;
+    color: white;
 }
 
 .titleInput {
