@@ -1,0 +1,44 @@
+.inputBox {
+    margin: 10px;
+    display: flex;
+    padding: 50px;
+    width: 60vw;
+    height: 200px;
+    border: 1px black solid;
+    box-shadow: 1px 1px 1px black;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputBox > input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inputBox > input:focus {
+    border-bottom: solid 2px rgb(0, 153, 255);
+    outline: none;
+}
+
+.titleLabel {
+    font-size: 30px;
+
+}
+
+.addButton {
+    height: 70px;
+    width: 100px;
+    background: rgb(27, 125, 253);
+    font-size: 15px;
+}
+
+.titleInput {
+    height: 80px;
+    font-size: 30px
+
+}
