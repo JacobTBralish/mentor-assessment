@@ -32,9 +32,16 @@ class TodoInput extends Component {
 
     render() { 
         let { title } = this.state;
+
+        //In-line style
+        let style = {
+            fontSize: '30px',
+            fontWeight: 'bold'
+        }
+
         return ( 
             <div className='inputBox'>
-                <label className='titleLabel'>To-Do:</label>
+                <label style={style} className='titleLabel'>To-Do:</label>
                 <input className='titleInput' value={title} maxLength={60} onChange={this.handleChange} type='text'></input>
                 <button className='addButton' onClick={() => {this.postNewTask(title)}}>Add to list</button>
             </div>

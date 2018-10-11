@@ -44,7 +44,7 @@ export function getTasks(){
 
 export function getTask(id){
     let tasks = axios.get('https://practiceapi.devmountain.com/api/tasks').then(response => {
-        return response.data.filter(e => e.id == id)
+        return response.data.filter(task => task.id == id)
     })
     return {
         type: GET_TASK,

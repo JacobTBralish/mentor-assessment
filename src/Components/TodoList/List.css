@@ -23,7 +23,6 @@
     margin: 5px;
     padding: 5px;
     white-space: nowrap;
-    /* overflow: hidden; */
     text-overflow: ellipsis;
 }
 
@@ -58,6 +57,12 @@
     background: rgb(173, 170, 170);
     transition: 0.4s;
     position: relative;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.completedButton:hover {
+    background: rgb(134, 132, 132);
 
 }
 
@@ -71,7 +76,7 @@
     background: rgb(173, 170, 170);
     transition: 0.4s;
     position: relative;
-
+    margin: 2px;
 }
 
 .deleteButton {
@@ -81,5 +86,12 @@
     border: none;
     background: none;
     font-weight: 20px;
+    cursor: pointer;
+    margin: 2px;
+    transition: .4s;
+}
 
+.deleteButton:hover {
+    background: rgb(218, 58, 58);
+    color: white
 }

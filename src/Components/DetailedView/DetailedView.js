@@ -64,7 +64,7 @@ class DetailedView extends Component {
             
             return <div key={index}></div>
         }) : 'loading...'
-        
+
         
         return ( 
             <div className='detailedView'>

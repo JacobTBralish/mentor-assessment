@@ -18,16 +18,13 @@
     border-bottom: 2px solid black;
     padding: 10px;
     margin: 10px;
+    
 }
 
 .inputBox > input:focus {
     border-bottom: solid 2px rgb(0, 153, 255);
     outline: none;
-}
-
-.titleLabel {
-    font-size: 30px;
-    font-weight: bold
+    transition: .2s;
 }
 
 .addButton {
@@ -36,6 +33,12 @@
     background: rgb(27, 125, 253);
     font-size: 15px;
     color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    background: rgb(26, 98, 194);
 }
 
 .titleInput {
